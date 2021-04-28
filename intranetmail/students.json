@@ -1,0 +1,21 @@
+[    
+    {"studentId":1,"regno":20356, "name":"Baraka christian", "email":"mukunzichristian@gmail.com", "tel":"0782634753","faculty":"IT","department":"networks"},
+    {"studentId":2,"regno":20353, "name":"Ishimwe pacific", "email":"pacificishimwe@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+    {"studentId":3,"regno":20452, "name":"anne marie", "email":"anne@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},    
+    {"studentId":4,"regno":20300, "name":"elive igihozo", "email":"elive@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":5,"regno":20301, "name":"simplice", "email":"simple@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":6,"regno":20302, "name":"diane", "email":"diane@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":7,"regno":20303, "name":"thierry", "email":"thierry@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":8,"regno":20304, "name":"babu", "email":"thierry@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":9,"regno":20305, "name":"innocent", "email":"thierry@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":10,"regno":20306, "name":"bizi", "email":"thierry@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":11,"regno":20307, "name":"sylve", "email":"thierry@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":12,"regno":20308, "name":"kety", "email":"thierry@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":13,"regno":20309, "name":"kellia", "email":"thierry@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":14,"regno":20310, "name":"fifi", "email":"thierry@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":15,"regno":20311, "name":"wase", "email":"thierry@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":16,"regno":20312, "name":"yvette", "email":"thierry@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":17,"regno":20313, "name":"yve", "email":"yve@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":18,"regno":20314, "name":"musa", "email":"musa@gmail.com", "tel":"0782634752","faculty":"IT","department":"networks"},
+	{"studentId":20,"regno":20451, "name":"Hategekimana samuel", "email":"hategasamu@gmail.com", "tel":"0788701615","faculty":"IT","department":"networks"}
+]

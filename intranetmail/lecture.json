@@ -1,0 +1,9 @@
+[    
+    {"lectureId":1000,"regno":1000, "name":"Minani jean", "email":"mukunzichristian@gmail.com", "tel":"0782634753"},
+    {"lectureId":1001,"regno":1001, "name":"Niyodusenga peter", "email":"peterniyo@gmail.com", "tel":"0782634751"},
+    {"lectureId":1002,"regno":1002, "name":"Sebagenzi jason", "email":"Sebagenzi@gmail.com", "tel":"0782634754"},
+{"lectureId":1003,"regno":1003, "name":"vivie", "email":"vivie@gmail.com", "tel":"0782634751"}, 
+{"lectureId":1004,"regno":1004, "name":"pierre", "email":"pierre@gmail.com", "tel":"0782634752"},
+{"lectureId":1005,"regno":1005, "name":"prince", "email":"prince@gmail.com", "tel":"0782634752"},   
+    {"lectureId":1010,"regno":1010, "name":"lola", "email":"lora@gmail.com", "tel":"0788701615"}
+]

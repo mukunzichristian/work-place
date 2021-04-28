@@ -1,0 +1,10 @@
+[    
+    {"groupId":1,"groupName":"A", "room":201, "startHour":"08:30","endHour":"11:30","courseId":1,"lectureId":1000,"day":"Sunday"},
+    {"groupId":2,"groupName":"E", "room":204, "startHour":"18:00","endHour":"21:00","courseId":2,"lectureId":1001,"day":"Monday"},
+	 {"groupId":3,"groupName":"A", "room":201, "startHour":"08:30","endHour":"11:00","courseId":3,"lectureId":1000,"day":"Sunday"},
+	 {"groupId":4,"groupName":"E", "room":204, "startHour":"18:00","endHour":"21:00","courseId":4,"lectureId":1001,"day":"Thursday"},
+	 {"groupId":5,"groupName":"E", "room":208, "startHour":"18:00","endHour":"21:00","courseId":5,"lectureId":1003,"day":"Wenesday"},
+	 {"groupId":6,"groupName":"A", "room":203, "startHour":"14:30","endHour":"17:30","courseId":6,"lectureId":1004,"day":"Sunday"},
+	 {"groupId":7,"groupName":"E", "room":203, "startHour":"18:00","endHour":"20:30","courseId":7,"lectureId":1010,"day":"Tuesday"},
+	{"groupId":10,"groupName":"A", "room":205, "startHour":"14:00","endHour":"18:00","courseId":10,"lectureId":1004,"day":"Sunday"}
+]

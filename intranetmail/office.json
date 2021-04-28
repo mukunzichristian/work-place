@@ -1,0 +1,7 @@
+[    
+    {"officeId":2000, "officeRegno":2000, "officeName":"Accounting Office"},
+    {"officeId":2001, "officeRegno":2001, "officeName":"Registrar Office"}, 
+    {"officeId":2002, "officeRegno":2002, "officeName":"Registrar Office"},	
+    {"officeId":2003, "officeRegno":2003, "officeName":"Examenation Office"},
+	{"officeId":2004, "officeRegno":2004, "officeName":"Displinary Office"}
+]

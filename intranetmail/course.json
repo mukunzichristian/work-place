@@ -1,0 +1,10 @@
+[    
+    {"courseId":1,"courseCode":"cosc404", "courseName":"DBMS", "credit":4,"hours":32},
+    {"courseId":2,"courseCode":"sny118", "courseName":"Computer networks", "credit":3,"hours":40},    
+    {"courseId":3,"courseCode":"sny208", "courseName":"Pl/sql", "credit":4,"hours":60},
+	{"courseId":4,"courseCode":"sny209", "courseName":"Routing and switching", "credit":4,"hours":60},
+	{"courseId":5,"courseCode":"cosc207", "courseName":"Data structure", "credit":5,"hours":70},
+	{"courseId":6,"courseCode":"cosc203", "courseName":"Network Admin", "credit":4,"hours":60},
+	{"courseId":7,"courseCode":"cosc202", "courseName":"Big data", "credit":4,"hours":60},
+	 {"courseId":10,"courseCode":"sny209", "courseName":"TCP/ip", "credit":4,"hours":60}
+]

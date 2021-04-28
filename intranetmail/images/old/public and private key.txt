@@ -1,0 +1,78 @@
+PHP Public/Private Key Cryptography
+PHP Public/Private key cryptography is fairly strait forward but at the time of this writing it's poorly documented.
+
+Understanding how Public/Private Key Encryption Works
+Before we get into how you do it, it's important to understand how it works.
+ The methods used to do public/private key encryption only work for a very small amount of data,
+ less than 1024 bytes. The exact number of bytes depends on the method used.
+
+Since we want to encrypt something that is large, a whole message, the system must use two types of encryption. First,
+ it picks a random key and encrypt the full message with that key. This first encryption is simply a regular one-way cipher. 
+Next, the random key we used in the first encryption is itself encrypted using the public or private key. 
+Now, only the matching public/private key can decrypt the one-way key used to encrypt the full message. But,
+ we must store both the encrypted message and the key that was used to encrypt it. I'll use two files to store those pieces of information.
+
+Generating the Public/Private Key Pair
+The first thing you need to do is generate your public/private key pair.
+ This can be done in PHP but the little documentation I could find about the process only worked in PHP 5.3.0 or greater and 
+I happen to be using a slightly older version. It's fairly easy to generate the key pair on a Linux box using OpenSSL so I generated my key pair using that. 
+Under windows you could probably use PuTTYgen, but I haven't tried that.
+
+I use the following openssl command to generate my private key.
+
+openssl genrsa -out private.key 1024
+Next I use the following openssl command to generate my public key.
+
+openssl rsa -in private.key -out public.pem -outform PEM -pubout
+That's it, we're ready to use our public/private keys to encrypt or decrypt data.
+
+Encrypting Data with the Public Key
+Arrays are used for the $publicKeys and the resulting $encryptedKeys below. This allows you to encrypt the same message for multiple recipients .
+ This example only uses one public/private key pair, however, so our array's will contain only one item. 
+Never the less, the function requires and returns an array for these values.
+
+It should also be noted that we will base 64 encode the encrypted data. This makes it easier to store the data in plain text, such as an email.
+
+// Get the full message text into a variable
+$fullText = 'Hello world.  Nice to meet you.';
+
+// Load the public key into an array
+$publicKeys[] = openssl_get_publickey(file_get_contents('public.key'));
+
+// Encrypt the $fullText and return the $encryptedText and the $encryptedKeys
+$res = openssl_seal($fullText, $encryptedText, $encryptedKeys, $publicKeys);
+
+// Setup a couple filenames to store the text and its key
+$dataFile = 'data.txt';
+$keyFile = 'data.key';
+
+// Write the order files
+file_put_contents($dataFile, base64_encode($encryptedText));
+file_put_contents($keyFile, base64_encode($encryptedKeys[0]));
+That's it, your full text is now encrypted into the 'data.txt' file using the key that was encrypted with your public key and stored in the 'data.key' file.
+
+Decrypting Data with the Private Key
+// Load the private key from the private.key file
+$privateKey = openssl_get_privatekey(file_get_contents('private.key'));
+
+// Setup a couple filenames to load the text and its key from
+$dataFile = 'data.txt';
+$keyFile = 'data.key';
+
+// Read the previously encrypted file and the key used to encrypt it
+$encryptedData = file_get_contents($dataFile);
+$encryptedKey = file_get_contents($keyFile);
+
+// Decrypt the data with our $privateKey and store the result in $decryptedData
+$result = openssl_open(base64_decode($encryptedData), $decryptedData, base64_decode($encryptedKey), $privateKey);
+
+// Show if it was a success or failure
+if ($result) {
+  echo "Success.\n";
+} else {
+  echo "Failure.\n";
+}
+
+// Store it locally
+$localFile = 'decrypted.txt';
+file_put_contents($localFile, $decryptedData);

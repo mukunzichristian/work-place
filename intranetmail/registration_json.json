@@ -1,0 +1,18 @@
+[    
+   {"regId":1,"studentId":1, "groupId":1},
+   {"regId":2,"studentId":1, "groupId":2},
+   {"regId":3,"studentId":1, "groupId":5},
+   {"regId":4,"studentId":1, "groupId":6},
+   {"regId":5,"studentId":1, "groupId":7},   
+   {"regId":6,"studentId":2, "groupId":1},
+   {"regId":7,"studentId":2, "groupId":2},
+   {"regId":8,"studentId":2, "groupId":3},
+   {"regId":9,"studentId":2, "groupId":4},
+   {"regId":10,"studentId":2, "groupId":5},
+   {"regId":11,"studentId":20, "groupId":10},
+   {"regId":12,"studentId":20, "groupId":4},
+   {"regId":13,"studentId":20, "groupId":5},
+   {"regId":14,"studentId":20, "groupId":6},
+   {"regId":15,"studentId":20, "groupId":1}
+    
+]
